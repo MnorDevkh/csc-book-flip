@@ -17,7 +17,7 @@ const fetchBooks = async () => {
             title: book.title,
             department: book.department || 'General',
             departmentColor: book.departmentColor || 'text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700',
-            url: book.url || 'http://localhost:8000/books/' + book.id,
+            url: book.url || 'https://csc-book-api.boeurnmnor.site/books/' + book.id,
             modified: book.updated_at ? new Date(book.updated_at).toLocaleDateString() : 'Recently',
             views: book.views || '0',
             coverImage: book.cover_image || 'https://via.placeholder.com/300x400',
